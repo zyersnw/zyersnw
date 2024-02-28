@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가위 바위 보 게임</title>
+</head>
+
+<body>
+
+    <h2>가위 바위 보 게임</h2>
+
+    <form action="/" method="post">
+        <label for="choice">가위, 바위, 보 중 선택:</label>
+        <select id="choice" name="choice" required>
+            <option value="가위">가위</option>
+            <option value="바위">바위</option>
+            <option value="보">보</option>
+        </select>
+        <input type="submit" value="제출 하기">
+
+    </form>
+
+
+    <p>결과: 사용자의 선택 : {{player_choice}} // 컴퓨터의 선택 : {{computer_selection}} // 승부 결과 : {{result}} </p>
+
+
+</body>
+
+</html>
